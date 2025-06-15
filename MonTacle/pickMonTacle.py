@@ -9,6 +9,7 @@ for path in os.listdir(cards_dir):
     cards.append(path)
 
 n = random.randrange(0, len(cards)-1)
+print(n)
 montaclePick = cards[n]
 with open('montacle.txt', 'w') as f:
   f.write(montaclePick)
