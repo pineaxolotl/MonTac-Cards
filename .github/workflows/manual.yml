@@ -19,5 +19,15 @@ jobs:
       - name: Run the script
         run: python MonTacle/pickMonTacle.py
 
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add MonTacle/montacle.txt
+          git commit -m "Update montacle.txt from workflow"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Show output file
         run: cat MonTacle/montacle.txt
