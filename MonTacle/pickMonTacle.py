@@ -1,3 +1,4 @@
+import os
 import random
 
 cards_dir = os.path.join(os.path.dirname(__file__), "..")
