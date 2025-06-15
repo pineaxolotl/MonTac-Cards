@@ -23,4 +23,4 @@ if len(blacklist) >= 30:
   with open(blacklist_path, 'w') as f:
     f.writelines(blacklist[1:])
 with open(blacklist_path, 'a') as f:
-  f.write(montaclePick + ".PNG")
+  f.write(montaclePick + ".PNG\n")
