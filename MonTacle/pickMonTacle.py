@@ -19,7 +19,7 @@ output_path = os.path.join(os.path.dirname(__file__), "montacle.txt")
 with open(output_path, 'w') as f:
   f.write(montaclePick)
 
-if len(blacklist) >= 30:
+if len(blacklist) >= 2:
   with open(blacklist_path, 'w') as f:
     f.writelines(blacklist[1:])
 with open(blacklist_path, 'a') as f:
