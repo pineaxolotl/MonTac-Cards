@@ -1,6 +1,8 @@
 name: Manual Test
 
 on:
+  schedule:
+    - cron: '0 4 * * *'  # Every day at 12:00 AM EST
   workflow_dispatch:
 
 jobs:
