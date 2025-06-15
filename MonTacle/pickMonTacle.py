@@ -11,5 +11,7 @@ for path in os.listdir(cards_dir):
 n = random.randrange(0, len(cards)-1)
 print(n)
 montaclePick = cards[n]
-with open('montacle.txt', 'w') as f:
+
+output_path = os.path.join(os.path.dirname(__file__), "montacle.txt")
+with open(output_path, 'w') as f:
   f.write(montaclePick)
