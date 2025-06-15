@@ -9,7 +9,7 @@ with open(blacklist_path, 'r') as f:
   blacklist = [line.strip() + ".PNG" for line in f]
 
 for path in os.listdir(cards_dir):
-  if path.endswith(".PNG"):
+  if path.endswith(".PNG") and path not in blacklist:
     cards.append(path)
 
 n = random.randrange(len(cards))
