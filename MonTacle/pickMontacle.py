@@ -1,6 +1,6 @@
 import random
 
-cards_dir = os.path.join(os.path.dirname(__file__), ".."))
+cards_dir = os.path.join(os.path.dirname(__file__), "..")
 cards = []
 
 for path in os.listdir(cards_dir):
