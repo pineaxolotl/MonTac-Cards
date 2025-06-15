@@ -22,7 +22,7 @@ with open(output_path, 'w') as f:
 blacklist_lines = []
 
 for i in range(len(blacklist)):
-  blacklist_lines.append(i + "\n") 
+  blacklist_lines.append(blacklist[i] + "\n") 
 
 if len(blacklist) >= 3:
   with open(blacklist_path, 'w') as f:
