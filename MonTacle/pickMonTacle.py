@@ -17,9 +17,9 @@ montaclePick = cards[n].replace(".PNG", "")
 
 output_path = os.path.join(os.path.dirname(__file__), "montacle.txt")
 with open(output_path, 'w') as f:
-  f.write(montaclePick + ".PNG")
+  f.write(montaclePick)
 
 with open(blacklist_path, 'w') as f:
   if len(blacklist) >= 30:
     f.writelines(blacklist[1:])
-  f.write(montaclePick)
+  f.write(montaclePick + ".PNG")
