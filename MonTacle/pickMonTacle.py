@@ -21,6 +21,6 @@ with open(output_path, 'w') as f:
 
 with open(blacklist_path, 'w') as f:
   lines = f.readlines()
-  if len(blacklist) => 30:
+  if len(blacklist) >= 30:
     f.writelines(lines[1:])
   f.write(montaclePick)
