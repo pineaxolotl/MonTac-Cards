@@ -24,7 +24,7 @@ blacklist_lines = []
 for i in range(len(blacklist)):
   blacklist_lines.append(blacklist[i] + "\n") 
 
-if len(blacklist) >= 3:
+if len(blacklist) >= 30:
   with open(blacklist_path, 'w') as f:
     f.writelines(blacklist_lines[1:])
 with open(blacklist_path, 'a') as f:
