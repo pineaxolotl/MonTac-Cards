@@ -9,7 +9,7 @@ for path in os.listdir(cards_dir):
     cards.append(path)
 
 n = random.randrange(len(cards))
-montaclePick = cards[n]
+montaclePick = cards[n].replace(".PNG", "")
 
 output_path = os.path.join(os.path.dirname(__file__), "montacle.txt")
 with open(output_path, 'w') as f:
