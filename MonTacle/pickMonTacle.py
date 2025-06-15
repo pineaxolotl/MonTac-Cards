@@ -19,8 +19,13 @@ output_path = os.path.join(os.path.dirname(__file__), "montacle.txt")
 with open(output_path, 'w') as f:
   f.write(montaclePick)
 
+blacklist_lines = []
+
+for i in range(len(blacklist)):
+  blacklist_lines.append(i + "\n") 
+
 if len(blacklist) >= 3:
   with open(blacklist_path, 'w') as f:
-    f.writelines(blacklist[1:])
+    f.writelines(blacklist_lines[1:])
 with open(blacklist_path, 'a') as f:
   f.write(montaclePick + ".PNG\n")
