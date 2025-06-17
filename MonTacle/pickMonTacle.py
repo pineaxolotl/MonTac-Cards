@@ -10,7 +10,7 @@ with open(blacklist_path, 'r') as f:
 
 id_path = os.path.join(os.path.dirname(__file__), "id.txt")
 with open(id_path, 'r') as f:
-  id = f.read()
+  id = int(f.read())
 
 id += 1
 with open(id_path, 'w') as f:
