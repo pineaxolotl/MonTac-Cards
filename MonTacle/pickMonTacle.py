@@ -8,6 +8,14 @@ blacklist_path = os.path.join(os.path.dirname(__file__), "blacklist.txt")
 with open(blacklist_path, 'r') as f:
   blacklist = [line.strip() for line in f]
 
+id_path = os.path.join(os.path.dirname(__file__), "id.txt")
+with open(id_path, 'r') as f:
+  id = f.read()
+
+id += 1
+with open(id_path, 'w') as f:
+  f.write(id)
+
 for path in os.listdir(cards_dir):
   if path.endswith(".PNG") and path not in blacklist:
     cards.append(path)
