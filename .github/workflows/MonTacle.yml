@@ -33,6 +33,9 @@ jobs:
           git add MonTacle/blacklist.txt
           git commit -m "Update blacklist.txt from workflow"
           git push
+          git add MonTacle/id.txt
+          git commit -m "Update blacklist.txt from workflow"
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
