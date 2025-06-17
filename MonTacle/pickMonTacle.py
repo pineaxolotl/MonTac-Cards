@@ -14,7 +14,7 @@ with open(id_path, 'r') as f:
 
 id += 1
 with open(id_path, 'w') as f:
-  f.write(id)
+  f.write(str(id))
 
 for path in os.listdir(cards_dir):
   if path.endswith(".PNG") and path not in blacklist:
